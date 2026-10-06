@@ -118,8 +118,9 @@ a:hover {
   align-items: center;
 }
 
-.nav-link:hover,
-.nav-item.active a {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link.active {
   background-color: Var(--primary-color);
   color: var(--white);
 }
