@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Patrick+Hand&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bootstrap - My Fridge - Saucepal</title>
+    <link rel="icon" type="image/x-icon" href="images/saucepal-favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"
+        ><img src="images/saucepal-logo.svg" width="150" height="50" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="fridge.html">My Fridge</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="my-form">
+      <h1>Hello!</h1>
+      <br />
+      <h2>Let us know what you have in your fridge.</h2>
+      <p>We will try to match your ingredients with recipes.</p>
+      <form class="form-row">
+        <label class="sr-only" for="inlineFormInputName2"
+          >Ingredient name</label
+        >
+        <input
+          type="text"
+          class="form-control mb-2 mr-sm-2"
+          id="inlineFormInputName2"
+          placeholder="Tomatoes"
+        />
+
+        <label class="sr-only" for="inlineFormInputGroupUsername2"
+          >Quantity (kg)</label
+        >
+        <div class="input-group mb-2 mr-sm-2">
+          <input
+            type="number"
+            class="form-control"
+            name="quantity"
+            step="0.1"
+            placeholder="0.5"
+            id="inlineFormInputGroupUsername2"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Category</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="Other">Choose one</option>
+            <option value="Fruit & veg">Fruit &amp; veg</option>
+            <option value="Meat & fish">Meat &amp; fish</option>
+            <option value="Dairy & eggs">Dairy &amp; eggs</option>
+            <option value="Store cupboard">Store cupboard</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

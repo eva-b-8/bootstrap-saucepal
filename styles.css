@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-background-color: #fef6ee;
+  --white: #ffffff;
+  --primary-color: #c63e19;
+  --primary-darker-color: #762918;
+  --primary-lighter-color: #f9d1af;
+  --primary-lightest-color: #fcead8;
+  --off-black: #3f120b;
+  --light-gray: #dbdbdb;
+  --field-bg: #fff;
+  --field-border: #b8b2a8;
+  --field-border-focus: #2b6cb0;
+  --field-text: #1a1a1a;
+  --label-text: var(--off-black);
+  --error: #a02118;
+  --icon-bg: var(--primary-lightest-color);
+  --icon-color: var(--primary-darker-color);
+}
+
+:root[data-theme="dark"] {
+  --field-bg: #21242a;
+  --field-border: #4a4f58;
+  --field-border-focus: #7fb0e8;
+  --field-text: #eceff4;
+  --label-text: #b9bec7;
+  --icon-bg: #4a1d12;
+  --icon-color: #f9d1af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+.display-4 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-darker-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  margin-bottom: 12px;
+}
+
+.btn-primary:hover,
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: var(--primary-darker-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn-outline-secondary {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-lighter-color);
+  border: 1.5px solid var(--primary-darker-color);
+  color: var(--primary-darker-color);
+  cursor: pointer;
+}
+
+#hero {
+  background-image: url(images/hero-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  align-content: center;
+}
+
+#hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.navbar {
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 16px 24px;
+  height: 100%;
+  color: var(--primary-color);
+  transition: all 0.6s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover,
+.nav-item.active a {
+  background-color: Var(--primary-color);
+  color: var(--white);
+}
