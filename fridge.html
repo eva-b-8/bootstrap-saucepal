@@ -52,66 +52,79 @@
       <br />
       <h2>Let us know what you have in your fridge.</h2>
       <p>We will try to match your ingredients with recipes.</p>
-      <form class="form-row needs-validation" novalidate>
-        <label class="sr-only" for="inlineFormInputName2"
-          >Ingredient name</label
-        >
-        <input
-          type="text"
-          class="form-control mb-2 mr-sm-2"
-          id="inlineFormInputName2"
-          placeholder="Tomatoes"
-          aria-describedby="inlineFormInputName2Feedback"
-          required
-        />
-        <div id="inlineFormInputName2Feedback" class="invalid-feedback">
-          Enter an ingredient name.
-        </div>
+      <form class="needs-validation" novalidate>
+        <div class="row g-2 align-items-end">
+          <div class="col-md-3">
+            <label class="form-label" for="inlineFormInputName2"
+              >Ingredient name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputName2"
+              placeholder="Tomatoes"
+              aria-describedby="inlineFormInputName2Feedback"
+              required
+            />
+            <div id="inlineFormInputName2Feedback" class="invalid-feedback">
+              Enter an ingredient name.
+            </div>
+          </div>
 
-        <label class="sr-only" for="inlineFormInputGroupUsername2"
-          >Quantity (kg)</label
-        >
-        <div class="input-group has-validation mb-2 mr-sm-2">
-          <input
-            type="number"
-            class="form-control"
-            name="quantity"
-            step="0.1"
-            placeholder="0.5"
-            id="inlineFormInputGroupUsername2"
-            aria-describedby="inlineFormInputGroupUsername2Feedback"
-            required
-          />
-          <div
-            id="inlineFormInputGroupUsername2Feedback"
-            class="invalid-feedback"
-          >
-            Enter a quantity.
+          <div class="col-md-3">
+            <label class="form-label" for="inlineFormInputGroupUsername2"
+              >Quantity (kg)</label
+            >
+            <div class="input-group has-validation">
+              <input
+                type="number"
+                class="form-control"
+                name="quantity"
+                step="0.1"
+                placeholder="0.5"
+                id="inlineFormInputGroupUsername2"
+                aria-describedby="inlineFormInputGroupUsername2Feedback"
+                required
+              />
+              <div
+                id="inlineFormInputGroupUsername2Feedback"
+                class="invalid-feedback"
+              >
+                Enter a quantity.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label" for="exampleFormControlSelect1"
+              >Category</label
+            >
+            <select
+              class="form-select"
+              id="exampleFormControlSelect1"
+              aria-describedby="exampleFormControlSelect1Feedback"
+              required
+            >
+              <option value="" selected disabled>Choose one</option>
+              <option value="Fruit & veg">Fruit &amp; veg</option>
+              <option value="Meat & fish">Meat &amp; fish</option>
+              <option value="Dairy & eggs">Dairy &amp; eggs</option>
+              <option value="Store cupboard">Store cupboard</option>
+              <option value="Frozen">Frozen</option>
+              <option value="Other">Other</option>
+            </select>
+            <div
+              id="exampleFormControlSelect1Feedback"
+              class="invalid-feedback"
+            >
+              Choose a category.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
-
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Category</label>
-          <select
-            class="form-control"
-            id="exampleFormControlSelect1"
-            aria-describedby="exampleFormControlSelect1Feedback"
-            required
-          >
-            <option value="" selected disabled>Choose one</option>
-            <option value="Fruit & veg">Fruit &amp; veg</option>
-            <option value="Meat & fish">Meat &amp; fish</option>
-            <option value="Dairy & eggs">Dairy &amp; eggs</option>
-            <option value="Store cupboard">Store cupboard</option>
-            <option value="Frozen">Frozen</option>
-            <option value="Other">Other</option>
-          </select>
-          <div id="exampleFormControlSelect1Feedback" class="invalid-feedback">
-            Choose a category.
-          </div>
-        </div>
-        <br />
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
       </form>
     </div>
 
